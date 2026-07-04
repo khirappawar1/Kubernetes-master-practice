@@ -1,0 +1,8 @@
+## Used port-forwadring because using kind cluster 
+![alt text](image.png)
+
+## nginx forwared to port 8080 on host machine 
+![alt text](image-1.png)
+
+
+
