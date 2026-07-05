@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Kubernetes Dashboard</title>
+
+<link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🚀 Kubernetes Visitor Dashboard</h1>
+
+<form action="/add" method="POST">
+
+<input
+type="text"
+name="name"
+placeholder="Your Name"
+required>
+
+<textarea
+name="message"
+placeholder="Write a message"
+required></textarea>
+
+<button>Save Message</button>
+
+</form>
+
+<div class="cards">
+
+<% visitors.forEach(visitor=>{ %>
+
+<div class="card">
+
+<h3><%= visitor.name %></h3>
+
+<p><%= visitor.message %></p>
+
+<span>
+
+<%= visitor.createdAt.toDateString() %>
+
+</span>
+
+</div>
+
+<% }) %>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
